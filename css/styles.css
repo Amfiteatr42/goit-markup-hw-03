@@ -51,6 +51,11 @@ body {
   padding-bottom: 94px;
 }
 
+.padding-bot {
+  padding-bottom: 0;
+}
+
+
 .header {
   border-bottom: 1px solid #ECECEC;
 }
@@ -143,6 +148,9 @@ body {
 
 .hero {
   text-align: center;
+  background-color: var(--hero-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -157,7 +165,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-backrgound-color);
-  background-color: var(--hero-background-color);
 }
 
 .hero-btn {
@@ -259,12 +266,13 @@ body {
 
 .team-text {
   color: var(--secondary-text-color);
-  padding-bottom: 30px;
 }
 
 .team-item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  
 }
 
 .team-item:not(:last-child) {
@@ -345,7 +353,7 @@ body {
 
 .projects-text {
   padding: 0 24px 20px;
-  
+
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
@@ -371,4 +379,13 @@ body {
 
 .projects-item:not(:nth-last-child(-n+3)) {
   margin-bottom: 30px;
+}
+
+.projects-box {
+  border: 1px solid #eee;
+  border-top: none;
+}
+
+.projects-item>img {
+  display: block;
 }
